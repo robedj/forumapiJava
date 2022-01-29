@@ -1,6 +1,6 @@
 package com.example.forumapijava.entity;
 
-package br.com.alura.forum.modelo;
+
 
 public class Usuario {
 
