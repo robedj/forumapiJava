@@ -5,19 +5,17 @@ import com.example.forumapijava.entity.Topico;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
 import java.util.List;
-//primeiro ENDPOINT
-@Controller
-public class TopicosController {
+@RestController
+public class TopicosController{
 
-    @ResponseBody
     @RequestMapping("/topicos")
+    @ResponseBody
     public List<Topico> lista(){
-        Topico topic = new Topico("duvida", "duvida com spring", new Curso("Springboot", "programacao"));
-        return Arrays.asList(topic, topic, topic);
+        Topico topico = new Topico("Duvida", "Duvida Spring", new Curso("Springboot", "Programação"));
+        return Arrays.asList(topico, topico, topico);
     }
-
-
 }
