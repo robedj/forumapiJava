@@ -1,12 +1,10 @@
 package com.example.forumapijava.controller;
-import java.util.Arrays;
+
 import java.util.List;
 import com.example.forumapijava.controller.dto.TopicoDto;
-import com.example.forumapijava.entity.Curso;
 import com.example.forumapijava.entity.Topico;
 import com.example.forumapijava.repository.TopicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
