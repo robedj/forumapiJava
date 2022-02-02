@@ -13,6 +13,6 @@ public interface TopicoRepository extends JpaRepository <Topico, Long>{
     List<Topico> findByCurso_Nome(String nomeCurso);
 
 
-    @Query("SELECT t FROM Topico T WHERE t.curso.nome = :nomeCurso")
-    List<Topico> loadPorNomeDoCurso(@Param("nomeCurso")String nomeCurso);
+//    @Query("SELECT t FROM Topico T WHERE t.curso.nome = :nomeCurso")
+//    List<Topico> loadPorNomeDoCurso(@Param("nomeCurso")String nomeCurso);
 }
